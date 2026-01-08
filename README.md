@@ -26,7 +26,8 @@ Whether you want `return` statements to be bright red, or you need `TODO` commen
 You can also configure it manually in your `.vscode/settings.json` or User Settings
 ```json
   "keywordColorizer.styles": [
-    // ===== Curent default values =====
+    // ===== Current defaults =====
+
     // ===== Declarations =====
     { "keyword": "function", "color": "#4ECDC4", "isBold": false },
     { "keyword": "class", "color": "#82AAFF", "isBold": false },
