@@ -9,7 +9,7 @@ Whether you want `return` statements to be bright red, or you need `TODO` commen
 *   **Custom Colors:** Assign any hex color to any word.
 *   **Bold Styling:** Toggle bold font weight for extra emphasis.
 *   **Live Updates:** Colors update instantly as you type or change settings.
-*   **Settings UI Support:** configure everything via dropdowns and color pickers—no JSON editing required.
+<!-- *   **Settings UI Support:** configure everything via dropdowns and color pickers—no JSON editing required. -->
 *   **Language Agnostic:** Works in TypeScript, Python, C++, Java, Text, and more.
 
 ## How to Use
