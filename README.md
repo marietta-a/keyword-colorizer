@@ -23,8 +23,8 @@ Whether you want `return` statements to be bright red, or you need `TODO` commen
 6. Check **Is Bold** if desired.
 
 ### Via settings.json
-You can also configure it manually in your `.vscode/settings.json` or User Settings:
-
+You can also configure it manually in your `.vscode/settings.json` or User Settings
+Current defaults:
 ```json
   "keywordColorizer.styles": [
     // ===== Declarations =====
