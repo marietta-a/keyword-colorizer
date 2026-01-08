@@ -11,3 +11,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Feature: Support for custom Hex colors.
 - Feature: Option to toggle **Bold** font weight.
 - Feature: Real-time updates when modifying settings or switching active editors.
+
+
+## [0.0.2] - 2026-01-08
+### Updated
+ - README to display sample keywords and their colors

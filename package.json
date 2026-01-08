@@ -2,11 +2,12 @@
   "name": "keyword-colorizer",
   "displayName": "Keyword Colorizer",
   "description": "Highlight specific keywords with custom colors",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "keyword-colorizer",
   "engines": {
     "vscode": "^1.107.0"
   },
+  "icon": "images/kc-icon.png",
   "categories": [
     "Other"
   ],
