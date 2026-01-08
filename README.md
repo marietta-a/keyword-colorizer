@@ -13,20 +13,20 @@ Whether you want `return` statements to be bright red, or you need `TODO` commen
 *   **Language Agnostic:** Works in TypeScript, Python, C++, Java, Text, and more.
 
 ## How to Use
-
+<!-- 
 ### Via Settings UI (Recommended)
 1. Open VS Code Settings (`Ctrl + ,` or `Cmd + ,`).
 2. Search for **Keyword Colorizer**.
 3. Under **Keyword Colorizer: Styles**, click **Add Item**.
 4. Enter the **Keyword** (e.g., `function`, `return`, `get`).
 5. Pick a **Color** (hex code).
-6. Check **Is Bold** if desired.
+6. Check **Is Bold** if desired. -->
 
 ### Via settings.json
 You can also configure it manually in your `.vscode/settings.json` or User Settings
-Current defaults:
 ```json
   "keywordColorizer.styles": [
+    // ===== Curent default values =====
     // ===== Declarations =====
     { "keyword": "function", "color": "#4ECDC4", "isBold": false },
     { "keyword": "class", "color": "#82AAFF", "isBold": false },
