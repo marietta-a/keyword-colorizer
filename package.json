@@ -1,0 +1,102 @@
+{
+  "name": "keyword-colorizer",
+  "displayName": "Keyword Colorizer",
+  "description": "Highlight specific keywords with custom colors",
+  "version": "0.0.1",
+  "publisher": "keyword-colorizer",
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Keyword Colorizer",
+      "properties": {
+        "keywordColorizer.styles": {
+          "type": "array",
+          "description": "Add keywords here to override the defaults.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "keyword": {
+                "type": "string",
+                "description": "Select a keyword",
+                "enum": [
+                  "function", "class", "interface", "type", "enum", "struct", "namespace", "module",
+                  "new", "constructor", "get", "set", "extends", "implements", "this", "super",
+                  "return", "throw", "break", "continue", "yield", "debugger", "goto", "delete",
+                  "if", "else", "switch", "case", "default", "for", "while", "do", "with",
+                  "try", "catch", "finally",
+                  "const", "let", "var", "static", "final", "readonly", "volatile",
+                  "import", "export", "from", "as", "package", "require", "using",
+                  "public", "private", "protected", "abstract", "native", "synchronized",
+                  "async", "await",
+                  "true", "false", "null", "undefined", "void",
+                  "int", "float", "double", "char", "byte", "short", "long", "boolean", "string",
+                  "any", "unknown", "never", "typeof", "instanceof", "in", "of"
+                ]
+              },
+              "color": {
+                "type": "string",
+                "description": "Hex Color",
+                "format": "color-hex",
+                "default": "#FF0000"
+              },
+              "isBold": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          },
+          "default": [
+            { "keyword": "function", "color": "#4ECDC4", "isBold": false },
+            { "keyword": "class", "color": "#82AAFF", "isBold": false },
+            { "keyword": "interface", "color": "#C678DD", "isBold": false },
+            { "keyword": "type", "color": "#D19A66", "isBold": false },
+            { "keyword": "enum", "color": "#98C379", "isBold": false },
+            { "keyword": "struct", "color": "#E06C75", "isBold": false },
+            { "keyword": "namespace", "color": "#E5C07B", "isBold": false },
+            { "keyword": "module", "color": "#7FDBCA", "isBold": false },
+            { "keyword": "new", "color": "#FF6F91", "isBold": false },
+            { "keyword": "constructor", "color": "#B39DDB", "isBold": false },
+            { "keyword": "get", "color": "#80CBC4", "isBold": false },
+            { "keyword": "set", "color": "#FFB74D", "isBold": false },
+            { "keyword": "extends", "color": "#A5D6A7", "isBold": false },
+            { "keyword": "implements", "color": "#F48FB1", "isBold": false },
+            
+          ] 
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.107.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "typescript-eslint": "^8.18.0",
+    "eslint": "^9.17.0",
+    "typescript": "^5.7.2",
+    "ts-loader": "^9.5.1",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
